@@ -4,7 +4,7 @@ body {
 }
 
 .section {
-  padding-top: 20px;
+  padding-top: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,8 +18,7 @@ body {
 }
 
 .slider {
-  position: relative;
-  padding: 20px;
+  padding: 2vh;
   background-color: #25282A;
   color: #C1A064;
   display: flex;
@@ -34,29 +33,21 @@ body {
 }
 
 .slides {
-  width: 500px;
-  position: relative;
+  width: 30vw;
   overflow: hidden;
   display: flex;
 }
 
 .slide {
-  width: 500px;
+  width: 30vw;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 4vh;
 }
 
 .slide__img {
   width: 100%;
   border-radius: 3%;
-}
-
-.controls {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25282A;
 }
 
 .controls fieldset {
@@ -71,69 +62,64 @@ body {
 }
 
 .slider:has(.control__meme_1:checked) .slide-container {
-  transform: translate(0px);
+  transform: translate(0);
 }
 
 .slider:has(.control__meme_2:checked) .slide-container {
-  transform: translate(-500px);
+  transform: translate(-30vw);
 }
 
 .slider:has(.control__meme_3:checked) .slide-container {
-  transform: translate(-1000px);
+  transform: translate(-60vw);
 }
 
 .slider:has(.control__meme_4:checked) .slide-container {
-  transform: translate(-1500px);
+  transform: translate(-90vw);
 }
 
 .slider:has(.control__meme_5:checked) .slide-container {
-  transform: translate(-2000px);
+  transform: translate(-120vw);
 }
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 10px;
+    padding: 1vh;
   }
 
   .slider {
-    padding: 10px;
+    padding: 1vh;
   }
 
   .slides {
-    width: 300px;
+    width: 50vw;
   }
 
   .slide {
-    width: 300px;
-    gap: 60px;
+    width: 50vw;
+    gap: 6vh;
   }
 
   .slide__caption {
     text-align: center;
   }
 
-  .controls {
-    right: 100px;
-    bottom: 60px;
-  }
-
   .slider:has(.control__meme_1:checked) .slide-container {
-    transform: translate(0px);
+    transform: translate(0);
   }
   
   .slider:has(.control__meme_2:checked) .slide-container {
-    transform: translate(-300px);
+    transform: translate(-50vw);
   }
   
   .slider:has(.control__meme_3:checked) .slide-container {
-    transform: translate(-600px);
+    transform: translate(-100vw);
   }
   
   .slider:has(.control__meme_4:checked) .slide-container {
-    transform: translate(-900px);
+    transform: translate(-150vw);
   }
   
   .slider:has(.control__meme_5:checked) .slide-container {
-    transform: translate(-1200px);
+    transform: translate(-200vw);
   }
 }
